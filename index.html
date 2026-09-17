@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kickresume - Online Resume Builder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            Kickresume<span>.</span>
+        </div>
+
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#templates">Templates</a>
+            <a href="#builder">Resume Builder</a>
+        </nav>
+
+        <button class="nav-btn" onclick="openBuilder()">
+            Create Resume
+        </button>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                ✨ AI-Powered Resume Builder
+            </div>
+
+            <h1>
+                Build a resume
+                <span>that gets noticed.</span>
+            </h1>
+
+            <p>
+                Create a professional resume in minutes.
+                Choose a beautiful template, add your
+                experience and download your resume.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn" onclick="openBuilder()">
+                    Create My Resume →
+                </button>
+
+                <button class="secondary-btn" onclick="scrollToTemplates()">
+                    View Templates
+                </button>
+
+            </div>
+
+            <div class="trust">
+
+                <div>
+                    <strong>50K+</strong>
+                    <small>Resumes Created</small>
+                </div>
+
+                <div>
+                    <strong>20+</strong>
+                    <small>Templates</small>
+                </div>
+
+                <div>
+                    <strong>100%</strong>
+                    <small>Free to Start</small>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- HERO RESUME -->
+
+        <div class="hero-preview">
+
+            <div class="resume-paper">
+
+                <div class="paper-left">
+
+                    <div class="avatar">
+                        AR
+                    </div>
+
+                    <h2>AYUSH RAJ</h2>
+
+                    <p>Frontend Designer</p>
+
+                    <div class="paper-line"></div>
+
+                    <h4>CONTACT</h4>
+
+                    <small>ayush@email.com</small>
+                    <small>+91 9876543210</small>
+                    <small>Patna, India</small>
+
+                    <h4>SKILLS</h4>
+
+                    <small>HTML</small>
+                    <small>CSS</small>
+                    <small>JavaScript</small>
+
+                </div>
+
+                <div class="paper-right">
+
+                    <h3>PROFILE</h3>
+
+                    <p>
+                        Creative frontend designer passionate
+                        about building modern and responsive
+                        websites.
+                    </p>
+
+                    <h3>EXPERIENCE</h3>
+
+                    <h5>Frontend Designer</h5>
+
+                    <p>
+                        Designed responsive websites and
+                        interactive user interfaces.
+                    </p>
+
+                    <h3>EDUCATION</h3>
+
+                    <h5>Bachelor's Degree</h5>
+
+                    <p>
+                        Computer Science & Engineering
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features" id="features">
+
+        <div class="section-title">
+
+            <span>POWERFUL FEATURES</span>
+
+            <h2>Everything you need to build a great resume.</h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Professional Templates</h3>
+                <p>
+                    Choose from modern and professional
+                    resume templates.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Live Preview</h3>
+                <p>
+                    See your resume update instantly
+                    while you type.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">💾</div>
+                <h3>Auto Save</h3>
+                <p>
+                    Your resume data is automatically
+                    saved in your browser.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-icon">📄</div>
+                <h3>PDF Ready</h3>
+                <p>
+                    Print or save your professional
+                    resume as a PDF.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TEMPLATES ================= -->
+
+    <section class="templates" id="templates">
+
+        <div class="section-title">
+
+            <span>RESUME TEMPLATES</span>
+
+            <h2>Choose your style.</h2>
+
+        </div>
+
+
+        <div class="template-grid">
+
+            <div class="template-card selected">
+
+                <div class="template-one">
+
+                    <div class="t-sidebar"></div>
+
+                    <div class="t-content">
+                        <b>AYUSH RAJ</b>
+                        <hr>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <br>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                </div>
+
+                <h3>Modern</h3>
+
+                <button onclick="selectTemplate('modern')">
+                    Use Template
+                </button>
+
+            </div>
+
+
+            <div class="template-card">
+
+                <div class="template-two">
+
+                    <h4>AYUSH RAJ</h4>
+
+                    <hr>
+
+                    <i></i>
+                    <i></i>
+                    <i></i>
+
+                    <h5>EXPERIENCE</h5>
+
+                    <i></i>
+                    <i></i>
+
+                </div>
+
+                <h3>Classic</h3>
+
+                <button onclick="selectTemplate('classic')">
+                    Use Template
+                </button>
+
+            </div>
+
+
+            <div class="template-card">
+
+                <div class="template-three">
+
+                    <h4>AYUSH RAJ</h4>
+
+                    <p>FRONTEND DESIGNER</p>
+
+                    <hr>
+
+                    <h5>PROFILE</h5>
+
+                    <i></i>
+                    <i></i>
+                    <i></i>
+
+                </div>
+
+                <h3>Minimal</h3>
+
+                <button onclick="selectTemplate('minimal')">
+                    Use Template
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BUILDER ================= -->
+
+    <section class="builder" id="builder">
+
+        <div class="builder-header">
+
+            <div>
+                <span>RESUME BUILDER</span>
+                <h2>Create your resume</h2>
+            </div>
+
+            <div class="builder-actions">
+
+                <button onclick="toggleTheme()">
+                    🌙
+                </button>
+
+                <button onclick="printResume()">
+                    🖨 Print / PDF
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="builder-layout">
+
+
+            <!-- FORM -->
+
+            <div class="form-panel">
+
+                <h3>Personal Information</h3>
+
+
+                <div class="photo-upload">
+
+                    <div id="photoPreview">
+                        AR
+                    </div>
+
+                    <div>
+                        <label>
+                            Profile Photo
+                        </label>
+
+                        <input
+                            type="file"
+                            id="photo"
+                            accept="image/*"
+                        >
+                    </div>
+
+                </div>
+
+
+                <label>Full Name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Ayush Raj"
+                >
+
+
+                <label>Professional Title</label>
+
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Frontend Designer"
+                >
+
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="ayush@email.com"
+                >
+
+
+                <label>Phone</label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="+91 9876543210"
+                >
+
+
+                <label>Location</label>
+
+                <input
+                    type="text"
+                    id="location"
+                    placeholder="Patna, India"
+                >
+
+
+                <label>About Me</label>
+
+                <textarea
+                    id="about"
+                    placeholder="Write a short professional summary..."
+                ></textarea>
+
+
+                <!-- EDUCATION -->
+
+                <div class="section-heading">
+
+                    <h3>Education</h3>
+
+                    <button type="button" onclick="addEducation()">
+                        + Add
+                    </button>
+
+                </div>
+
+                <div id="educationContainer">
+
+                    <div class="education-item">
+
+                        <input
+                            type="text"
+                            class="degree"
+                            placeholder="Degree / Course"
+                        >
+
+                        <input
+                            type="text"
+                            class="college"
+                            placeholder="College / University"
+                        >
+
+                        <input
+                            type="text"
+                            class="education-year"
+                            placeholder="2022 - 2026"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <!-- EXPERIENCE -->
+
+                <div class="section-heading">
+
+                    <h3>Experience</h3>
+
+                    <button type="button" onclick="addExperience()">
+                        + Add
+                    </button>
+
+                </div>
+
+                <div id="experienceContainer">
+
+                    <div class="experience-item">
+
+                        <input
+                            type="text"
+                            class="job"
+                            placeholder="Job Title"
+                        >
+
+                        <input
+                            type="text"
+                            class="company"
+                            placeholder="Company"
+                        >
+
+                        <textarea
+                            class="job-description"
+                            placeholder="Describe your work..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SKILLS -->
+
+                <h3>Skills</h3>
+
+                <input
+                    type="text"
+                    id="skills"
+                    placeholder="HTML, CSS, JavaScript, React"
+                >
+
+
+                <button
+                    class="generate-btn"
+                    onclick="generateResume()"
+                >
+                    Generate Resume →
+                </button>
+
+            </div>
+
+
+            <!-- LIVE PREVIEW -->
+
+            <div class="preview-panel">
+
+                <div class="preview-top">
+
+                    <span>LIVE PREVIEW</span>
+
+                    <span class="live">
+                        ● Live
+                    </span>
+
+                </div>
+
+
+                <div
+                    id="resumePreview"
+                    class="resume-preview modern-template"
+                >
+
+                    <div class="resume-header">
+
+                        <div>
+
+                            <h1 id="previewName">
+                                Ayush Raj
+                            </h1>
+
+                            <h2 id="previewTitle">
+                                Frontend Designer
+                            </h2>
+
+                            <p id="previewAbout">
+                                Creative frontend designer
+                                passionate about creating
+                                modern digital experiences.
+                            </p>
+
+                        </div>
+
+                        <div
+                            id="previewPhoto"
+                            class="preview-photo"
+                        >
+                            AR
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-row">
+
+                        <span id="previewEmail">
+                            ayush@email.com
+                        </span>
+
+                        <span id="previewPhone">
+                            +91 9876543210
+                        </span>
+
+                        <span id="previewLocation">
+                            Patna, India
+                        </span>
+
+                    </div>
+
+
+                    <div class="resume-body">
+
+                        <main>
+
+                            <section>
+
+                                <h3>Experience</h3>
+
+                                <div id="previewExperience">
+
+                                    <div class="preview-entry">
+
+                                        <h4>
+                                            Frontend Designer
+                                        </h4>
+
+                                        <strong>
+                                            Company Name
+                                        </strong>
+
+                                        <p>
+                                            Your experience will
+                                            appear here.
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+
+                            <section>
+
+                                <h3>Education</h3>
+
+                                <div id="previewEducation">
+
+                                    <div class="preview-entry">
+
+                                        <h4>
+                                            Bachelor's Degree
+                                        </h4>
+
+                                        <strong>
+                                            University
+                                        </strong>
+
+                                        <p>
+                                            2022 - 2026
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </section>
+
+                        </main>
+
+
+                        <aside>
+
+                            <section>
+
+                                <h3>Skills</h3>
+
+                                <div
+                                    id="previewSkills"
+                                    class="skills-list"
+                                >
+
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+
+                                </div>
+
+                            </section>
+
+                        </aside>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <div class="logo">
+            Kickresume<span>.</span>
+        </div>
+
+        <p>
+            Build your future. One resume at a time.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
